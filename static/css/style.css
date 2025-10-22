@@ -1,0 +1,50 @@
+:root{
+    /* color */
+    --black: #000;
+    --green: rgb(6, 146, 6);
+    --white: #ffff;
+}
+/* GLOBAL CSS */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* BODY SECTION */
+
+/* HEADER SECTION */
+header, footer{
+    background-color: var(--black);
+    color:var(--white);
+    padding: 15px 10px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    margin: auto;
+    justify-content: end;
+}
+
+nav ul li{
+    margin-left: 25px;
+}
+
+
+/* FOOTER SECTION  */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+footer ul{
+    margin-left: 15px;
+}
