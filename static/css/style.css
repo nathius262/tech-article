@@ -1,50 +1,117 @@
 :root{
-    /* color */
-    --black: #000;
-    --green: rgb(6, 146, 6);
-    --white: #ffff;
+    --balck: #000000;
+    --white: #ffffff;
+    --grey: #4d4d4d;
+
+    /* PADDING VAR  */
+    --padding-section: 40px;
 }
-/* GLOBAL CSS */
+
+
+/* Global Styles */
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 ul{
-    list-style-type: none;
+    list-style: none;
 }
 
-/* BODY SECTION */
 
-/* HEADER SECTION */
+/*  Header Styles */
+
 header, footer{
-    background-color: var(--black);
-    color:var(--white);
-    padding: 15px 10px;
+    background-color: var(--balck);
+    color: var(--white);
+    padding: 20px 0;
+    /* text-align: center; */
 }
 
-nav{
+header nav, footer{
     display: flex;
     justify-content: space-between;
+    padding: 0 var(--padding-section);
 }
 
-nav ul{
+
+header nav ul{
     display: flex;
-    margin: auto;
-    justify-content: end;
+    gap: 20px;
 }
 
-nav ul li{
-    margin-left: 25px;
+
+/* MAIN SECTION  */
+main{
+    padding: var(--padding-section) var(--padding-section);
+}
+
+.blog-list-section{
+    margin: 20px 20px 0 20px;
+}
+
+.blog-list-heading{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.blog-list-heading h2{
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.blog-cards{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    gap: 20px;
+}
+
+.blog-img{
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.blog-cards img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.blog-content{
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.438);
+}
+
+.blog-content .blog-text{
+    padding: 20px 20px;
+}
+
+.blog-content .blog-btn{
+    padding: 10px 20px;
+    text-align: end;
+}
+
+.blog-content .blog-btn button{
+    padding: 10px 15px;
+    border: none;
+    background-color: var(--balck);
+    color: var(--white);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.blog-content .blog-btn button:hover{
+    background-color: var(--grey);
 }
 
 
 /* FOOTER SECTION  */
-
 footer{
-    display: flex;
-    justify-content: space-between;
+    padding: var(--padding-section) var(--padding-section);
 }
+
 footer ul{
-    margin-left: 15px;
+    margin-left: 13px;
 }
