@@ -1,0 +1,64 @@
+:root{
+    --primary-color: #4CAF50;
+    --secondary-color: #f9f9f9;
+    --font-family: 'Arial, sans-serif';
+}
+
+body{
+    background: url('https://images.unsplash.com/photo-1507720708252-1ddeb1dbff34?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRyYXZlbHN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.newsletter-main {
+    font-family: var(--font-family);
+    color: var(--secondary-color);
+    background-color: #000000b2;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section-1{
+    padding: 20px;
+    width: 45%;
+}
+
+.profle-image{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.profle-image img{
+    object-fit: cover;
+    width: 100%;
+}
+
+
+.section-2 input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.section-2 button{
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
